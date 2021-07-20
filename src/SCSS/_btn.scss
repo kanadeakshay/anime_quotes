@@ -1,0 +1,18 @@
+.vocals {
+  position: relative;
+}
+
+.vocals {
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $gray;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+}

@@ -1,0 +1,90 @@
+.vocals {
+  margin: 0 8px;
+  padding: 0 15px 15px 15px;
+  width: 100%;
+  // box-shadow: 8px 9px 10px 0px #00000040;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid red;
+  // background-color: white;
+
+  &__char {
+    position: relative;
+    padding-top: 30px;
+    &__space {
+      // width: 36px;
+      padding-left: 45px;
+    }
+    &::before {
+      content: url(../icons/op_quote.svg);
+      position: absolute;
+      top: 12px;
+      left: 0;
+    }
+  }
+
+  &__origin {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 5px;
+
+    &__charname {
+      text-transform: capitalize;
+      margin-bottom: 5px;
+
+      svg {
+        margin-left: 5px;
+      }
+    }
+    &__anime {
+      text-transform: capitalize;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+@media screen and (min-width: 471px) {
+  .vocals {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    position: relative;
+  }
+  .vocals {
+    width: 100%;
+    max-width: 595px;
+    position: absolute;
+    animation: card-in-out 1.2s ease forwards;
+    // border: 1px solid red;
+
+    &__char {
+      // border: 1px solid;
+      margin-left: 160px;
+    }
+  }
+}
+
+@keyframes card-in-out {
+  0% {
+    background-color: $fadewhite;
+    right: 0;
+    bottom: 0;
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 8px 9px 10px 0px #3a353540;
+  }
+  100% {
+    right: -55px;
+    bottom: -50px;
+    box-shadow: 8px 9px 10px 0px #3d353540;
+    background-color: rgb(255, 255, 255);
+  }
+}
