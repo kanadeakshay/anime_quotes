@@ -1,0 +1,15 @@
+// query for fetching data from ani-List GraphQL API
+
+query ($search: String) {
+  Character(search: $search) {
+    name {
+      first
+    }
+    image {
+      large
+      medium
+    }
+    # description
+    siteUrl
+  }
+}
