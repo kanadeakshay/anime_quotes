@@ -60,6 +60,7 @@
   .vocals {
     width: 100%;
     max-width: 595px;
+    margin-bottom: 80px;
     position: absolute;
     animation: card-in-out 1.2s ease forwards;
     // border: 1px solid red;
@@ -67,6 +68,11 @@
     &__char {
       // border: 1px solid;
       margin-left: 160px;
+    }
+    &__origin {
+      &__anime {
+        margin-left: 160px;
+      }
     }
   }
 }

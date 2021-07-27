@@ -34,7 +34,7 @@ a:visited {
 
 @media screen and (min-width: 768px) {
   #root {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
@@ -59,10 +59,12 @@ a:visited {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 625px;
+    height: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin: 20px;
   }
 }
 
@@ -84,6 +86,7 @@ a:visited {
     position: relative;
   }
   .img {
+    margin-top: 80px;
     position: absolute;
     -webkit-animation: img-shifting 1.2s ease forwards;
             animation: img-shifting 1.2s ease forwards;
@@ -187,11 +190,15 @@ a:visited {
   .vocals {
     width: 100%;
     max-width: 595px;
+    margin-bottom: 80px;
     position: absolute;
     -webkit-animation: card-in-out 1.2s ease forwards;
             animation: card-in-out 1.2s ease forwards;
   }
   .vocals__char {
+    margin-left: 160px;
+  }
+  .vocals__origin__anime {
     margin-left: 160px;
   }
 }

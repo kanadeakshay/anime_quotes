@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  // background-color: gray;
+  // background-color: blue;
   // margin-bottom: 10px;
   padding-bottom: 15px;
   display: flex;
@@ -13,6 +13,8 @@
 @media screen and(min-width:768px) {
   .container {
     max-width: 625px;
+    height: 100%;
     flex-direction: row;
+    margin: 20px;
   }
 }
