@@ -1,3 +1,4 @@
+// For reference
 // query for fetching data from ani-List GraphQL API
 
 query ($search: String) {
@@ -12,4 +13,9 @@ query ($search: String) {
     # description
     siteUrl
   }
+}
+
+// query variables
+var variables = {
+  search : 'character_name',
 }
