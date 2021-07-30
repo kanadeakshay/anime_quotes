@@ -259,12 +259,29 @@ a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50px;
+  width: 70px;
   height: 50px;
   border-radius: 50%;
-  background-color: #8b8b8b;
+  background-color: transparent;
   position: absolute;
   right: 15px;
   bottom: 15px;
+}
+
+.vocals__btn__new {
+  cursor: pointer;
+  border: none;
+  background-color: #8b8b8b;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.vocals__btn__new:hover {
+  background-color: black;
+}
+
+.vocals__btn__new:hover svg {
+  fill: white;
 }
 /*# sourceMappingURL=style.css.map */
