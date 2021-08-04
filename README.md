@@ -12,8 +12,10 @@ Anime quotes is a website that shows the random character picture with the iconi
 
 ## Screenshots 🖼
 
-![mobile_view](/src/images/mobile_01.png)
-![desktop_view](/src/images/desktop_01.png)
+- Mobile view \
+  ![mobile_view](/src/images/mobile_01.png)
+- Desktop view \
+  ![desktop_view](/src/images/desktop_01.png)
 
 ## Local Setup
 
@@ -37,9 +39,9 @@ git clone https://github.com/akshay782/anime_quotes.git
 ## APIs Used
 
 - Animechan
-  - [GitHub Link](https://github.com/rocktimsaikia/anime-chan) | [Docs](https://animechan.vercel.app/)
+  - [GitHub Link](https://github.com/rocktimsaikia/anime-chan) | [Documentation](https://animechan.vercel.app/)
 - AniList
-  - [GitHub Link](https://github.com/AniList/ApiV2-GraphQL-Docs) | [Docs](https://anilist.gitbook.io/anilist-apiv2-docs/)
+  - [GitHub Link](https://github.com/AniList/ApiV2-GraphQL-Docs) | [Documentation](https://anilist.gitbook.io/anilist-apiv2-docs/)
 
 ## License 📃
 
