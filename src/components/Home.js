@@ -67,7 +67,7 @@ function Home() {
 
     if (response.ok) {
       const info = await response.json();
-      console.log(info);
+      // console.log(info);
       return info;
     } else{
       return response
@@ -94,7 +94,7 @@ function Home() {
             quote: animeChanData,
         });
         
-        console.log(whole_info);
+        // console.log(whole_info);
       } catch (error) {
         console.error(error);
         // alert("Error, check console");
