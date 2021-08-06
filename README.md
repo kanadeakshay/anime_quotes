@@ -4,7 +4,7 @@ Anime quotes is a simple React project that shows popular and iconic quotes from
 
 ## Motivation
 
-The first react project that I build using some fun APIs to practice my react skills.
+The first react project that I build using some fun APIs to **practice my react skills** and to **explore GraphQL.**
 
 ## Features
 
