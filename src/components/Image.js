@@ -2,7 +2,7 @@ import React from 'react';
 import not_available_img from '../images/not_available_img.png';
 import loading_img from '../images/loading_img.png';
 
-const Character_Image = (props)=>{
+const CharacterImage = (props)=>{
   const {img} = props;
   return (
     <div className="img">
@@ -11,7 +11,7 @@ const Character_Image = (props)=>{
   );
 }
 
-const Loading_Image = ()=>{
+const LoadingImage = ()=>{
   return (
     <div className="img">
       <img className="img__char" src={loading_img} alt=""/>
@@ -19,7 +19,7 @@ const Loading_Image = ()=>{
   )
 }
 
-const Image_NotAvailable = ()=>{
+const ImageNotAvailable = ()=>{
   return (
     <div className="img">
       <img className="img__char" src={not_available_img} alt=""/>
@@ -28,7 +28,7 @@ const Image_NotAvailable = ()=>{
 }
 
 export {
-    Character_Image,
-    Loading_Image,
-    Image_NotAvailable,
+    CharacterImage,
+    LoadingImage,
+    ImageNotAvailable,
 }

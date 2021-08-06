@@ -42,7 +42,7 @@ const Vocals = (props) =>{
   );
 }
 
-const Loading_Vocals = ()=>{
+const LoadingVocals = ()=>{
   return (
     <div className="vocals">
       <p className="vocals__char">
@@ -60,5 +60,5 @@ const Loading_Vocals = ()=>{
 
 export {
     Vocals,
-    Loading_Vocals,
+    LoadingVocals,
 }

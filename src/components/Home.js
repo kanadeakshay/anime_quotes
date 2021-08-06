@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import {
-  Character_Image,
-  Loading_Image,
-  Image_NotAvailable,
+  CharacterImage,
+  LoadingImage,
+  ImageNotAvailable,
 } from './Image'
-import {Vocals, Loading_Vocals} from './Vocals'
+import {Vocals, LoadingVocals} from './Vocals'
 import Error from './Error';
 
 
@@ -106,18 +106,18 @@ function Home() {
     <div className="container">
       {
         whole_info.isLoading ?
-        <Loading_Image/> :
+        <LoadingImage/> :
         isEmpty(whole_info.info) ?
-        <Image_NotAvailable/> :
+        <ImageNotAvailable/> :
         whole_info.info !== null ?
-        <Character_Image 
+        <CharacterImage 
         img = {whole_info.info.data.Character.image.large}
         /> :
         <Error/>
       }
       {
         whole_info.isLoading ?
-        <Loading_Vocals /> :
+        <LoadingVocals /> :
         <Vocals 
           on_refresh={refresh}
           char_quote={whole_info.quote.quote}

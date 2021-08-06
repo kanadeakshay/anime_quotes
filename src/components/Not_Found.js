@@ -2,7 +2,7 @@ import React from 'react';
 import {Home} from './Svgs';
 import {Link} from 'react-router-dom';
 
-const Not_Found = ()=>{
+const NotFound = ()=>{
     return (
         <div style={{
       height:"100vh",
@@ -32,4 +32,4 @@ const Not_Found = ()=>{
     )
 }
 
-export default Not_Found;
+export default NotFound;

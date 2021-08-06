@@ -4,7 +4,7 @@ import React from 'react';
 import Home from './components/Home';
 import About from './components/About';
 import Error from './components/Error';
-import Not_Found from './components/Not_Found';
+import NotFound from './components/Not_Found';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 function App(){
@@ -21,7 +21,7 @@ function App(){
                     <Error/>
                 </Route>
                 <Route path="*">
-                    <Not_Found/>
+                    <NotFound/>
                 </Route>
             </Switch>
         </Router>
