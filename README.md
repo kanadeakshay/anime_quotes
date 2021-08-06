@@ -43,6 +43,10 @@ git clone https://github.com/akshay782/anime_quotes.git
 - AniList
   - [GitHub Link](https://github.com/AniList/ApiV2-GraphQL-Docs) | [Documentation](https://anilist.gitbook.io/anilist-apiv2-docs/)
 
+## Upcoming Features
+
+- Dark Theme
+
 ## License 📃
 
 - [MIT License](/LICENSE)
