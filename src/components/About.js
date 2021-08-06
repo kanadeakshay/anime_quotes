@@ -19,12 +19,9 @@ const About =()=>{
         marginTop: "10px",
         textAlign: "center",
       }}>
-        Hi, I am Akshay Kanade. This is fun project that I created
-        to practise my React skills. <br />
-        This site shows you random anime quotes using some fun APIs.
-        <br />
-        If you want to check how I build it you can check my <a href="https://github.com/akshay782/anime_quotes">GitHub Repo</a> about
-        this.
+        Hi, I am Akshay Kanade. This is a fun project that I build to practice my React skills. 
+        This site shows you random anime quotes using some fun APIs. If you want to check how 
+        I build it you can check my <a href="https://github.com/akshay782/anime_quotes">GitHub Repo</a> about this.
       </p>
 
       <h4 style={{
@@ -37,8 +34,9 @@ const About =()=>{
         marginTop: "10px",
         textAlign: "center",
       }}>
-        I am using two APIs for image and quote so there may be sometimes character 
-        name and image will not match. But If you are Anime nerd you will immediatley notice.
+        I am using two APIs for image and quote respectively. So sometimes character name and 
+        image will not match. It happens only when the character's name sounds similar. 
+        But If you are an Anime nerd you will immediately notice.
       </p>
       <button style={{
         marginTop:"10px",
