@@ -253,35 +253,37 @@ a:visited {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: 500px;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.vocals__btn .btn {
+  cursor: pointer;
+  background-color: gray;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: transparent;
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
+  margin-left: 13px;
+  -webkit-box-shadow: 5px 7px 8px 0px #00000040;
+          box-shadow: 5px 7px 8px 0px #00000040;
 }
 
-.vocals__btn__new {
-  cursor: pointer;
-  border: none;
-  background-color: #8b8b8b;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-.vocals__btn__new:hover {
-  background-color: black;
-}
-
-.vocals__btn__new:hover svg {
-  fill: white;
+.vocals__btn .btn:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=style.css.map */
