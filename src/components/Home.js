@@ -4,15 +4,15 @@ import {
   LoadingImage,
   ImageNotAvailable,
 } from './Image'
-import {Vocals, LoadingVocals} from './Vocals'
+import { Vocals, LoadingVocals } from './Vocals'
 import Error from './Error';
 
 
 // Functions that checks obj is empty or not 
 function isEmpty(obj) {
-  for(var key in obj) {
-      if(obj.hasOwnProperty(key))
-          return false;
+  for (var key in obj) {
+    if (obj.hasOwnProperty(key))
+      return false;
   }
   return true;
 }
@@ -41,7 +41,7 @@ const query = /* GraphQL */ `
 
 function Home() {
 
-  const[new_quote, setNew_quote] = useState(true);
+  const [new_quote, setNew_quote] = useState(true);
   const [whole_info, setWhole_info] = useState({
     isLoading: true,
   });
@@ -69,15 +69,15 @@ function Home() {
       const info = await response.json();
       // console.log(info);
       return info;
-    } else{
+    } else {
       return response
     }
   }
 
-  const refresh=()=>{
-    if(new_quote === true){
+  const refresh = () => {
+    if (new_quote === true) {
       setNew_quote(false);
-    } else{
+    } else {
       setNew_quote(true);
     }
   }
@@ -89,42 +89,42 @@ function Home() {
         const ani_list_info = await get_ani_list_info(animeChanData.character);
 
         setWhole_info({
-            isLoading :false,
-            info: ani_list_info,
-            quote: animeChanData,
+          isLoading: false,
+          info: ani_list_info,
+          quote: animeChanData,
         });
-        
+
         // console.log(whole_info);
       } catch (error) {
         console.error(error);
         // alert("Error, check console");
       }
     })();
-  },[new_quote]);
+  }, [new_quote]);
 
   return (
     <div className="container">
       {
         whole_info.isLoading ?
-        <LoadingImage/> :
-        isEmpty(whole_info.info) ?
-        <ImageNotAvailable/> :
-        whole_info.info !== null ?
-        <CharacterImage 
-        img = {whole_info.info.data.Character.image.large}
-        /> :
-        <Error/>
+          <LoadingImage /> :
+          isEmpty(whole_info.info) ?
+            <ImageNotAvailable /> :
+            whole_info.info !== null ?
+              <CharacterImage
+                img={whole_info.info.data.Character.image.large}
+              /> :
+              <Error />
       }
       {
         whole_info.isLoading ?
-        <LoadingVocals /> :
-        <Vocals 
-          on_refresh={refresh}
-          char_quote={whole_info.quote.quote}
-          char_name={whole_info.quote.character}
-          char_anime={whole_info.quote.anime}
+          <LoadingVocals /> :
+          <Vocals
+            on_refresh={refresh}
+            char_quote={whole_info.quote.quote}
+            char_name={whole_info.quote.character}
+            char_anime={whole_info.quote.anime}
           // char_url={whole_info.info.data.siteUrl}
-        />
+          />
       }
     </div>
   );

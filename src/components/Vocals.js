@@ -29,11 +29,11 @@ const Vocals = (props) =>{
         <p className="vocals__origin__anime">({char_anime})</p>
       </div>
       <div className="vocals__btn">
-        <div className="vocals__btn__about btn">
-          <Link to="/about">
+        <Link to="/about">
+          <div className="vocals__btn__about btn">
             <Bulb />
-          </Link>
-        </div>
+          </div>
+        </Link>
         <div onClick={on_refresh} className="vocals__btn__new btn">
           <Refresh />
         </div>

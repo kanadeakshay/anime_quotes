@@ -20,19 +20,19 @@ const Error = () =>{
         color:"red"
       }}>Opps !!</h2>
       <h3>Something happens</h3>
-      <button style={{
-        marginTop:"10px",
-        width:"50px",
-        height:"50px",
-        border:"none",
-        borderRadius:"50%",
-        background:"gray",
-        cursor:"pointer"
-      }}>
-        <Link to="/">
+      <Link to="/">
+        <button style={{
+          marginTop:"10px",
+          width:"50px",
+          height:"50px",
+          border:"none",
+          borderRadius:"50%",
+          background:"gray",
+          cursor:"pointer"
+        }}>
           <Home/>
-        </Link>
-      </button>
+        </button>
+      </Link>
     </div>
   );
 }
